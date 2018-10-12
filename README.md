@@ -26,7 +26,7 @@ djangorestframework==3.8.2
 mysqlclient==1.3.10
 django-mysql==2.4.1
 ```
-[see requirements.txt](http://www.github.com/fingerman...) 
+see [requirements.txt](http://www.github.com/fingerman...) 
  
 
 
