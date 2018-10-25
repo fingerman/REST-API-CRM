@@ -1,15 +1,8 @@
 from django.conf.urls import url, include
-from .accounts import views as user_views
 
 
 urlpatterns = [
-    url(
-        r'^signup/$',
-        user_views.SignUp.as_view(),
-        name='user-signup'
-    ),
-    url(
-        r'^auth/', include('rest_framework.urls')
-    ),
-
+    url(r'^products/', include('api.products.urls')),
+    url(r'^companies/', include('api.companies.urls')),
+    url(r'^suppliers/', include('api.suppliers.urls')),
 ]
