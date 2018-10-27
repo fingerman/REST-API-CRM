@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'api',
     'companies',
     'suppliers',
+    'profiles',
     'djmoney',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_mysql',
     'django_countries',
+    'rest_framework_simplejwt',
 
 
 ]
@@ -134,6 +136,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+AUTH_USER_MODEL = 'profiles.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly', ),
