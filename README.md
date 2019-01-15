@@ -1,4 +1,4 @@
-# WebShop Django
+# REST to Django basic CRM
 
 WebShop based on the Django Framework
 
